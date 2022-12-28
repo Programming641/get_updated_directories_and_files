@@ -59,6 +59,62 @@ get_updated_files.py
      
 ~~~
 
+## running example
+** first time running it **
+test folder ( where I want to copy all files and folders ) is empty
+
+![first time running  test empty](https://user-images.githubusercontent.com/56218301/209750583-80b9563d-ab01-40e0-8b0a-fc5f47959c8d.png)
+
+![first time running2](https://user-images.githubusercontent.com/56218301/209750915-48285bab-40f6-413a-a57e-5fe632f8c391.png)
+
+then it copied all directories and files
+
+![created top directory](https://user-images.githubusercontent.com/56218301/209751050-208168d8-8368-4576-82f8-a344218b75eb.png)
+
+![created experiments folder](https://user-images.githubusercontent.com/56218301/209751151-79ed67f8-4791-4486-9f37-2e1e2b2d32ff.png)
+
+![created chemistry folder](https://user-images.githubusercontent.com/56218301/209751245-a607cbfe-e274-4aef-8db0-ddaf3a48f234.png)
+
+![created sodium hydroxide folder](https://user-images.githubusercontent.com/56218301/209751327-a04afe5e-c21c-42d0-822c-52148fd74bdf.png)
+
+![created magnetic fields folder](https://user-images.githubusercontent.com/56218301/209751619-2147a1fb-b114-40f0-8c4b-d4ec8c805698.png)
+
+above shows that it did not create two folders under magnetic fields folder. this is ok because they are empty folder. Once you add files to it. they will be copied.
+
+** after modying **
+
+![modified1](https://user-images.githubusercontent.com/56218301/209752035-7294d137-49ce-4c5b-aec8-9cb92e4ddee7.png)
+
+![modified2](https://user-images.githubusercontent.com/56218301/209752152-bc531292-0559-412b-b0f3-ba4014f186c1.png)
+
+![modified3](https://user-images.githubusercontent.com/56218301/209752279-5554b636-5f2a-4677-b89a-5dec8c876f97.png)
+
+![modified4](https://user-images.githubusercontent.com/56218301/209752335-5949d102-5149-41b2-bc8b-ad7bf0f2d25f.png)
+
+then delete all files and folders at the destination.
+![delete at destination](https://user-images.githubusercontent.com/56218301/209752476-d787d0c2-89f7-4705-8e2a-b9c89e0943b9.png)
+
+![execute](https://user-images.githubusercontent.com/56218301/209752619-326bd704-c42d-44e8-9dda-4012a1edc840.png)
+
+then you can see that only updated files are copid!!!
+
+![result1](https://user-images.githubusercontent.com/56218301/209752819-cc952f76-a507-46ee-b7a8-f9760f940ddd.png)
+
+![result2](https://user-images.githubusercontent.com/56218301/209752873-32404242-72a8-46b3-858a-9493a427464e.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
