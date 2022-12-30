@@ -3,8 +3,20 @@ from pathlib import Path
 import pickle
 import datetime, shutil
 
+from sys import platform
+
+if platform == "linux":
+   directory_separator = "/"
+elif platform == "win32":
+   directory_separator = "\\"
+
 def create_dirs_cp_file( filepath, top_dirname, dest_topdir ):
-   split_path = filepath.split("/")
+   # in windows, directory is separated by \\. in linux directory seperator is /
+   os_fixed_filepath = filepath.replace("\\", ",").replace("/", ",")
+   
+   print("os_fixed_filepath " + os_fixed_filepath )
+   
+   split_path = os_fixed_filepath.split(",")
    top_dir_index = split_path.index( top_dirname )
 
    for dir_index in range( top_dir_index + 1, len( split_path ) - 1 ):
@@ -31,14 +43,14 @@ def modified_or_not(cur_file ):
 
 
 def go_into_dir(cur_dir):
-   print()
-   print("current directory " + cur_dir)
+   #print()
+   #print("current directory " + cur_dir)
 
    dir_contents = os.listdir( cur_dir )
 
-   print("current directory contents")
-   print(dir_contents)
-   print()
+   #print("current directory contents")
+   #print(dir_contents)
+   #print()
 
    for dir_content in dir_contents:
       cur_fullpath = cur_dir + "/" + dir_content
@@ -47,7 +59,7 @@ def go_into_dir(cur_dir):
 
       else:
          # current dir_content is file
-         print("current file " + cur_fullpath ) 
+         #print("current file " + cur_fullpath ) 
          modified_or_not( cur_fullpath )
          
 
@@ -101,7 +113,9 @@ print(modified_dirs_files)
 # copying all the modified files to destination
 
 # copy top directory if not exists
-topdir_path = top_dir.split("/")
+
+topdir_path = top_dir.split(directory_separator)
+
 top_dirname = topdir_path[len(topdir_path) - 1 ]
 
 print("top_dirname " + top_dirname)
