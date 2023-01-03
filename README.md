@@ -102,9 +102,8 @@ then you can see that only updated files are copid!!!
 
 ![result2](https://user-images.githubusercontent.com/56218301/209752873-32404242-72a8-46b3-858a-9493a427464e.png)
 
-
-
-
+## features not included
+・file deletion is not supported
 
 
 
