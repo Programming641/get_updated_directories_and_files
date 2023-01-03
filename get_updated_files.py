@@ -12,11 +12,11 @@ elif platform == "win32":
 
 def create_dirs_cp_file( filepath, top_dirname, dest_topdir ):
    # in windows, directory is separated by \\. in linux directory seperator is /
-   os_fixed_filepath = filepath.replace("\\", ",").replace("/", ",")
+   os_fixed_filepath = filepath.replace("\\", "<>").replace("/", "<>")
    
    print("os_fixed_filepath " + os_fixed_filepath )
    
-   split_path = os_fixed_filepath.split(",")
+   split_path = os_fixed_filepath.split("<>")
    top_dir_index = split_path.index( top_dirname )
 
    for dir_index in range( top_dir_index + 1, len( split_path ) - 1 ):
